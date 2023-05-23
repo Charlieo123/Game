@@ -1,1 +1,1 @@
-# Snake Game
+# Snake Game - open in google chrome
