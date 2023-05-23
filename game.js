@@ -1,14 +1,16 @@
-import { update as updateSnake, draw as drawSnake, SNAKE_SPEED, getSnakeHead, snakeIntersection } from './snake.js'
+import { update as updateSnake, draw as drawSnake, SNAKE_SPEED, getSnakeHead, snakeIntersection, snakeBody } from './snake.js'
 import { update as updateFood, draw as drawFood } from './food.js'
 import { outsideGrid } from './grid.js'
 
 let lastRenderTime = 0
 let gameOver = false
 const gameBoard = document.getElementById('game-board')
+var audio2 = new Audio('audio_file2.mp3');
 
 function main(currentTime) {
   if (gameOver) {
-    if (confirm('You lost! Refresh the page to restart.')) {
+    audio2.play();
+    if (alert('Game Over! Your score was ' + snakeBody.length + '! Refresh the page to restart.')) {
       window.location = '/'
     }
     return
