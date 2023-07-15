@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess the Song</title>
+    <title>High Scores</title>
+    <link rel="stylesheet" href="highscores.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+
     <style>
         body {
             background-image: url(song.png);       
@@ -18,14 +20,12 @@
 </head>
 <body>
     <div class="container">
-        <div id="home" class="flex-column flex-center">
-            <h1>Are you ready?</h1>
-            <a href="game.html" class="btn">Play</a>
-            <a href="highscores.html" id="highscore-btn" class="btn">High Scores</a>
+        <div id="highScores" class="flex-center flex-column">
+            <h1 id="finalScore">Leaderboard</h1>
+            <ul id="highScoresList"></ul>
+            <a href="index.html" class="btn">Go Home</a>
         </div>
-
     </div>
-
-    
 </body>
+<script src="highscores.js"></script>
 </html>
