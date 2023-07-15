@@ -1,1 +1,1 @@
-# Snake Game - open in google chrome
+# Guess the Song Game - open in google chrome
